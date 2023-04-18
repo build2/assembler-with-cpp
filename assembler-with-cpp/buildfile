@@ -1,0 +1,8 @@
+exe{assembler-with-cpp}: {h c}{* -foo.c} testscript
+
+asm = ($c.class == 'gcc' && $c.target.cpu == 'x86_64')
+
+exe{assembler-with-cpp}: S{foo}: include = $asm
+exe{assembler-with-cpp}: c{foo}: include = (!$asm)
+
+c.poptions =+ "-I$out_root" "-I$src_root"

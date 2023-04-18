@@ -1,0 +1,5 @@
+assembler-with-cpp
+
+# Testscript output directory (can be symlink).
+#
+test-assembler-with-cpp
