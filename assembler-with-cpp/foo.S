@@ -2,7 +2,7 @@
 #  error not assembler-with-cpp
 #endif
 
-/* Decorate the name with a leading underscore where required. */
+/* Decorate the name with a leading underscore where required.  */
 #if defined(__APPLE__)
 #  define CDECL(n) _##n
 #else
